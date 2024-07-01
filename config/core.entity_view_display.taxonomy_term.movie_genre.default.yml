@@ -1,0 +1,21 @@
+uuid: 544ad4e0-b0ff-4cbe-b734-420a95fa0f32
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.movie_genre
+  module:
+    - text
+id: taxonomy_term.movie_genre.default
+targetEntityType: taxonomy_term
+bundle: movie_genre
+mode: default
+content:
+  description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

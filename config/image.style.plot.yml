@@ -1,0 +1,7 @@
+uuid: 26e9abeb-6433-4370-85a7-f5533734524a
+langcode: en
+status: true
+dependencies: {  }
+name: plot
+label: plot
+effects: {  }

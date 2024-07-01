@@ -1,0 +1,26 @@
+uuid: 9fcb04f3-9838-44f7-a95c-ab5e5d9249f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: recommended_movies
+label: 'Recommended movies'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      movies: movies
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 4
+  act_as_queue: false
+  reverse: false

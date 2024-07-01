@@ -1,0 +1,40 @@
+uuid: 81108b90-7bad-438e-af67-7ce347d89e18
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.review.body
+    - field.field.node.review.field_buy_on_dvd
+    - field.field.node.review.field_imdb
+    - field.field.node.review.field_in_cinemas
+    - field.field.node.review.field_movie_name
+    - field.field.node.review.field_trailers
+    - node.type.review
+  module:
+    - text
+    - user
+id: node.review.teaser
+targetEntityType: node
+bundle: review
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_buy_on_dvd: true
+  field_imdb: true
+  field_in_cinemas: true
+  field_movie_name: true
+  field_trailers: true

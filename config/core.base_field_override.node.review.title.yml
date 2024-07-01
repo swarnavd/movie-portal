@@ -1,0 +1,18 @@
+uuid: 6bc08583-22e9-4879-903d-514f46567c4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.review
+id: node.review.title
+field_name: title
+entity_type: node
+bundle: review
+label: 'Review Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

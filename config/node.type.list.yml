@@ -1,0 +1,17 @@
+uuid: bf1775d7-f282-490b-b794-3c97f2306d6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: List
+type: list
+description: null
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

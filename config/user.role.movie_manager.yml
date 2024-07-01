@@ -1,0 +1,9 @@
+uuid: 75934e6c-59ed-4fc8-a651-b19ec8ede0b7
+langcode: en
+status: true
+dependencies: {  }
+id: movie_manager
+label: 'Movie manager'
+weight: 4
+is_admin: null
+permissions: {  }

@@ -1,0 +1,27 @@
+uuid: 5b52d8c4-a9a3-4e83-96f6-fe8fc322c0c8
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.token
+    - taxonomy.vocabulary.movie_genre
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: taxonomy_term.movie_genre.token
+targetEntityType: taxonomy_term
+bundle: movie_genre
+mode: token
+content:
+  description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,33 @@
+uuid: 45f4d687-4cfb-4dcd-8091-91834bf5e2b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.news
+  module:
+    - system
+    - user
+  theme:
+    - olivero
+id: olivero_news
+theme: olivero
+region: primary_menu
+weight: -6
+provider: null
+plugin: 'system_menu_block:news'
+settings:
+  id: 'system_menu_block:news'
+  label: News
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

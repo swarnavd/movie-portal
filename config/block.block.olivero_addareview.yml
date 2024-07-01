@@ -1,0 +1,33 @@
+uuid: de1b4bf3-dcc9-445a-afd1-d14e2c2d8060
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.add-a-review
+  module:
+    - system
+    - user
+  theme:
+    - olivero
+id: olivero_addareview
+theme: olivero
+region: primary_menu
+weight: -8
+provider: null
+plugin: 'system_menu_block:add-a-review'
+settings:
+  id: 'system_menu_block:add-a-review'
+  label: 'Add a review'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
