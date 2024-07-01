@@ -1,0 +1,18 @@
+uuid: 610cdea0-dadb-4972-9167-f29d36051bdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.movies
+id: node.movies.title
+field_name: title
+entity_type: node
+bundle: movies
+label: 'Movie name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

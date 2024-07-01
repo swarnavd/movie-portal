@@ -1,0 +1,8 @@
+uuid: cdc5e3e0-e49a-4469-bb63-4337e03b0596
+langcode: en
+status: true
+dependencies: {  }
+id: custom_date
+label: 'custom date'
+locked: false
+pattern: 'd/m/ Y'

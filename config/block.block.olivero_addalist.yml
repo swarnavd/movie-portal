@@ -1,0 +1,33 @@
+uuid: 0b299ce5-be13-4c44-b0c5-40cfd3786434
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.add-a-list
+  module:
+    - system
+    - user
+  theme:
+    - olivero
+id: olivero_addalist
+theme: olivero
+region: primary_menu
+weight: -9
+provider: null
+plugin: 'system_menu_block:add-a-list'
+settings:
+  id: 'system_menu_block:add-a-list'
+  label: 'Add a List'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

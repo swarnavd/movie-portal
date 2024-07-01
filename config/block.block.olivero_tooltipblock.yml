@@ -1,0 +1,26 @@
+uuid: 49fb7935-8373-4bfd-85e1-0271b2b282fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - tooltip
+  theme:
+    - olivero
+id: olivero_tooltipblock
+theme: olivero
+region: content
+weight: -7
+provider: null
+plugin: tooltip_block
+settings:
+  id: tooltip_block
+  label: 'Tooltip block'
+  label_display: visible
+  provider: tooltip
+  message: hiii
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

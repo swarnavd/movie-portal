@@ -1,0 +1,24 @@
+uuid: 331ab3ff-4810-44a7-8032-228ffa3bf711
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: url
+label: url
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  f5f2b813-97e8-4d45-b069-57aac95eca42:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: f5f2b813-97e8-4d45-b069-57aac95eca42
+    context_mapping:
+      node: node
+    bundles:
+      movies: movies
+      news: news
+      review: review
+selection_logic: and
+weight: -5
+relationships: {  }

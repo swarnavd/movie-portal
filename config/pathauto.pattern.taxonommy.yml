@@ -1,0 +1,23 @@
+uuid: 8de61e90-5985-42fa-a093-0c47271926c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonommy
+label: taxonommy
+type: 'canonical_entities:taxonomy_term'
+pattern: 'review/[term:name]'
+selection_criteria:
+  08d63b4b-54c8-44a2-b2d0-5e11954b080c:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 08d63b4b-54c8-44a2-b2d0-5e11954b080c
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      movie_genre: movie_genre
+      news_category: news_category
+selection_logic: and
+weight: -5
+relationships: {  }

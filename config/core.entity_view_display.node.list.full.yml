@@ -1,0 +1,123 @@
+uuid: eee34942-b059-44c3-a601-a497ec534277
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.list.body
+    - field.field.node.list.field_movies
+    - node.type.list
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          efe3cae5-2b6a-42ba-a0ff-fd420dc787b3:
+            uuid: efe3cae5-2b6a-42ba-a0ff-fd420dc787b3
+            region: content
+            configuration:
+              id: 'extra_field_block:node:list:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          27157395-9dea-40c0-aca1-23e6eb6c4482:
+            uuid: 27157395-9dea-40c0-aca1-23e6eb6c4482
+            region: content
+            configuration:
+              id: 'field_block:node:list:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          4d9f4946-afbc-4db4-b01e-1eb7dae60651:
+            uuid: 4d9f4946-afbc-4db4-b01e-1eb7dae60651
+            region: content
+            configuration:
+              id: 'field_block:node:list:field_movies'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          98930779-5472-4982-abf3-0383fc150df7:
+            uuid: 98930779-5472-4982-abf3-0383fc150df7
+            region: content
+            configuration:
+              id: 'field_block:node:list:created'
+              label: 'Authored on'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: timestamp
+                label: hidden
+                settings:
+                  date_format: custom_date
+                  custom_date_format: ''
+                  timezone: ''
+                  tooltip:
+                    date_format: long
+                    custom_date_format: ''
+                  time_diff:
+                    enabled: false
+                    future_format: '@interval hence'
+                    past_format: '@interval ago'
+                    granularity: 2
+                    refresh: 60
+                    description: ''
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: node.list.full
+targetEntityType: node
+bundle: list
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_movies:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

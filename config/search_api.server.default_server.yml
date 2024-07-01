@@ -1,0 +1,17 @@
+uuid: f1dc5b21-c639-4e65-b1cf-70c4aed05649
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+_core:
+  default_config_hash: jHQatMW-yK0Qx_lugNuilJ0KNjEiIve4SCN07jwW1bg
+id: default_server
+name: 'Database Server'
+description: 'Default database server created by the Database Search Defaults module'
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 3
+  matching: words
+  phrase: bigram

@@ -1,0 +1,8 @@
+uuid: f6e238d6-738f-488c-83d8-516efea54e5b
+langcode: en
+status: true
+dependencies: {  }
+id: reviews
+label: Reviews
+description: ''
+locked: false

@@ -1,0 +1,23 @@
+uuid: 1f1888a8-6b6a-447a-b1cb-17f8d7d745a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imdb
+    - node.type.review
+  module:
+    - link
+id: node.review.field_imdb
+field_name: field_imdb
+entity_type: node
+bundle: review
+label: IMDB
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 16
+field_type: link
